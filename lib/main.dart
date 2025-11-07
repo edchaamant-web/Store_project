@@ -20,6 +20,75 @@ class MyApp extends StatelessWidget {
         body: Center(
           child: Column(
             children: [
+              Container(
+                width: double.infinity,
+                margin: EdgeInsets.all(50),
+              ),
+              Text(
+                "Welcome",
+                style: TextStyle(
+                    color: Colors.blue,
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold),
+              ),
+              Container(
+                padding: EdgeInsets.all(10),
+                child: TextField(
+                  style: TextStyle(color: Colors.blue),
+                  decoration: InputDecoration(
+                      border: InputBorder.none,
+                      hintText: "Email",
+                      icon: Icon(
+                        Icons.email,
+                        color: Colors.blue,
+                        size: 25,
+                      ),
+                      hintStyle: TextStyle(color: Colors.blue),
+                      enabledBorder: UnderlineInputBorder(
+                          borderRadius: BorderRadius.circular(20),
+                          borderSide: BorderSide(
+                              color: const Color.fromARGB(31, 9, 87, 255),
+                              width: 3)),
+                      focusedBorder: UnderlineInputBorder(
+                          borderRadius: BorderRadius.circular(20),
+                          borderSide: BorderSide(
+                              color: const Color.fromARGB(31, 252, 77, 8),
+                              width: 3)),
+                      filled: true,
+                      fillColor: const Color.fromARGB(255, 227, 239, 248)),
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.all(10),
+                child: TextField(
+                  style: TextStyle(color: Colors.blue),
+                  decoration: InputDecoration(
+                      border: InputBorder.none,
+                      hintText: "Password",
+                      icon: Icon(
+                        Icons.lock,
+                        color: Colors.blue,
+                        size: 25,
+                      ),
+                      hintStyle: TextStyle(color: Colors.blue),
+                      enabledBorder: UnderlineInputBorder(
+                          borderRadius: BorderRadius.circular(20),
+                          borderSide: BorderSide(
+                              color: const Color.fromARGB(31, 9, 87, 255),
+                              width: 3)),
+                      focusedBorder: UnderlineInputBorder(
+                          borderRadius: BorderRadius.circular(20),
+                          borderSide: BorderSide(
+                              color: const Color.fromARGB(31, 252, 77, 8),
+                              width: 3)),
+                      filled: true,
+                      fillColor: const Color.fromARGB(255, 227, 239, 248)),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.all(15),
+                width: double.infinity,
+              ),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   minimumSize: Size(370, 70),
@@ -40,7 +109,6 @@ class MyApp extends StatelessWidget {
                     fontSize: 19,
                     fontWeight: FontWeight.normal,
                     height: 1.5,
-
                   ),
                 ),
               ),
